@@ -32,10 +32,10 @@ class Yireo_GoogleTagManager_Block_Order extends Yireo_GoogleTagManager_Block_De
 
             /** @var Mage_Sales_Model_Order_Item $item */
 
-        	// Only add composed types once
-        	if( $item->getParentItemId() ) {
-				continue; 
-			}
+            // Only add composed types once
+            if( $item->getParentItemId() ) {
+                continue;
+            }
 
             /** @var Mage_Catalog_Model_Product $product */
             $product = $item->getProduct();
